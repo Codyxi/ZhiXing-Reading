@@ -143,5 +143,5 @@ Next.js - React 生产级框架
 Tailwind CSS - 实用优先的 CSS 框架
 Three.js - JavaScript 3D 库
 Lucide - 精美的开源图标
-<p align="center"> 用 ❤️ 构建 | 让每一本书都成为知识的基石 </p>
+用 ❤️ 构建 | 让每一本书都成为知识的基石
 项目地址: https://github.com/Codyxi/ZhiXing-Reading
