@@ -1,5 +1,3 @@
-markdown
-复制
 # 📚 ZhiXing-Reading - 读书蒸馏
 
 > 🧠 将阅读转化为知识，让书籍真正成为你的"第二大脑"
