@@ -1,0 +1,138 @@
+import type { SBPACK } from '../types/sbpack';
+
+export const wolfOfWallStreet: SBPACK = {
+  bookId: 'wolf-001',
+  bookTitle: '华尔街之狼',
+  coverUrl: '/covers/wolf-of-wall-street.jpg',
+  author: '乔丹·贝尔福特',
+  description: '前华尔街股票经纪人乔丹·贝尔福特的自传，揭示了金融世界的疯狂与贪婪，以及销售与说服的极致艺术。',
+  distilledAt: '2026-08-23T10:00:00Z',
+
+  nodes: [
+    {
+      id: 'wolf-k1',
+      title: '直线销售法',
+      type: 'skill',
+      summary: '贝尔福特独创的销售系统——通过六个关键步骤将潜在客户从"怀疑"推向"成交"。核心在于建立信任、制造紧迫感、并用"是的阶梯"逐步引导客户做出承诺。',
+      dimension: '事业',
+      weight: 5,
+    },
+    {
+      id: 'wolf-k2',
+      title: '情绪锚定技术',
+      type: 'skill',
+      summary: '在销售或说服过程中，将正面情绪与你的产品/观点建立强关联。当对方处于情绪高峰时植入关键信息，使其在回忆时自动调取正面感受。',
+      dimension: '关系',
+      weight: 4,
+    },
+    {
+      id: 'wolf-k3',
+      title: '贪婪与恐惧的双引擎',
+      type: 'knowledge',
+      summary: '金融市场和人类决策的底层驱动力只有两个：对获利的贪婪和对损失的恐惧。理解这一点就能理解90%的市场行为和人际博弈。',
+      dimension: '财富',
+      weight: 5,
+    },
+    {
+      id: 'wolf-k4',
+      title: '财富的幻觉与真实',
+      type: 'knowledge',
+      summary: '贝尔福特从亿万富翁到入狱的经历揭示：没有道德和自我约束的财富积累终将崩塌。真正的财富是可持续的、有根基的。',
+      dimension: '哲思',
+      weight: 4,
+    },
+    {
+      id: 'wolf-k5',
+      title: '影响力的语言模式',
+      type: 'skill',
+      summary: '顶级销售员使用特定的语言模式：假设成交法（"您是刷卡还是现金？"）、反问锁定法（"如果我能证明X，您是否愿意Y？"），以及语调和停顿的精确控制。',
+      dimension: '关系',
+      weight: 4,
+    },
+    {
+      id: 'wolf-k6',
+      title: '团队激励与狂热文化',
+      type: 'knowledge',
+      summary: '斯特拉顿·奥克蒙特的办公室文化展示了如何通过高额激励、公开表彰和群体狂热来激发团队战斗力——同时也展示了这种文化的毁灭性。',
+      dimension: '事业',
+      weight: 3,
+    },
+    {
+      id: 'wolf-k7',
+      title: '成瘾与自我毁灭的模式',
+      type: 'knowledge',
+      summary: '书中详尽记录了药物成瘾如何逐步侵蚀判断力、人际关系和职业。这是关于人类如何在极端压力下走向自我毁灭的病理学案例。',
+      dimension: '身心',
+      weight: 4,
+    },
+    {
+      id: 'wolf-k8',
+      title: '危机中的谈判策略',
+      type: 'skill',
+      summary: '贝尔福特与FBI的博弈展示了危机谈判的核心：信息控制、筹码评估、以及"合作但不投降"的微妙平衡。',
+      dimension: '决策',
+      weight: 3,
+    },
+  ],
+
+  evidences: [
+    {
+      id: 'wolf-e1',
+      quote: '销售的本质不是说服别人买他们不需要的东西，而是让他们相信他们想要的东西就在你手里。',
+      nodeId: 'wolf-k1',
+      location: '第三章',
+    },
+    {
+      id: 'wolf-e2',
+      quote: '人们不会买产品本身，他们买的是产品能给他们带来的感觉。',
+      nodeId: 'wolf-k2',
+      location: '第五章',
+    },
+    {
+      id: 'wolf-e3',
+      quote: '恐惧和贪婪——这两种情绪比世界上任何力量都强大，它们能让聪明人变成傻瓜，也能让普通人创造奇迹。',
+      nodeId: 'wolf-k3',
+      location: '第二章',
+    },
+    {
+      id: 'wolf-e4',
+      quote: '金钱本身不会让你快乐，但贫穷也不会。关键是你用什么方式去获取它。',
+      nodeId: 'wolf-k4',
+      location: '尾声',
+    },
+    {
+      id: 'wolf-e5',
+      quote: '永远不要问客户"要不要买"，要问他们"用哪种方式买"。',
+      nodeId: 'wolf-k5',
+      location: '第四章',
+    },
+    {
+      id: 'wolf-e6',
+      quote: '当你给一个年轻人数不清的钱和零监督，你得到的不是天才，你得到的是一颗定时炸弹。',
+      nodeId: 'wolf-k6',
+      location: '第七章',
+    },
+    {
+      id: 'wolf-e7',
+      quote: '药物给了你翅膀，但同时也夺走了你的天空。',
+      nodeId: 'wolf-k7',
+      location: '第九章',
+    },
+    {
+      id: 'wolf-e8',
+      quote: '在任何谈判中，最强大的人是那个最不怕走开的人。',
+      nodeId: 'wolf-k8',
+      location: '第十二章',
+    },
+  ],
+
+  relationships: [
+    { source: 'wolf-k1', target: 'wolf-k5', relationType: '技能互补' },
+    { source: 'wolf-k1', target: 'wolf-k2', relationType: '情绪驱动' },
+    { source: 'wolf-k3', target: 'wolf-k1', relationType: '底层原理' },
+    { source: 'wolf-k3', target: 'wolf-k4', relationType: '对立反思' },
+    { source: 'wolf-k6', target: 'wolf-k7', relationType: '因果关联' },
+    { source: 'wolf-k8', target: 'wolf-k3', relationType: '应用实例' },
+    { source: 'wolf-k2', target: 'wolf-k7', relationType: '极端后果' },
+  ],
+};
